@@ -1,7 +1,6 @@
 import { View, Text, StyleSheet, TouchableOpacity, FlatList } from 'react-native'
 import React, { useState } from 'react';
 import { DATA } from '../data/Data';
-import Animated, { LightSpeedInLeft } from 'react-native-reanimated';
 
 const Animation = (props) => {
     const [expanded, setExpanded] = useState(null);
@@ -28,11 +27,12 @@ const Animation = (props) => {
                                 </Text>
                             </TouchableOpacity>
                             {expanded == item.id ?
-                                <Animated.View 
-                                    entering = {LightSpeedInLeft} >
+                                // <Animated.View
+                                <View>
+                                    {/* entering = {LightSpeedInLeft} > */}
                                     <Text style={styles.sub} >{item.subCat}</Text>
-
-                                </Animated.View>
+                                </View>
+                                // </Animated.View>
                                 : null
                             }
                         </View>
