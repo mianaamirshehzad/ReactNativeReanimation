@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, useColorScheme, View } from 'react-native';
-import Animation from './src/screens/Animation';
+import AccordionAnimation from './src/screens/AccordionAnimation';
 
 const App = () => {
   return (

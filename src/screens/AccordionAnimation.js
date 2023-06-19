@@ -1,8 +1,9 @@
 import { View, Text, StyleSheet, TouchableOpacity, FlatList } from 'react-native'
 import React, { useState } from 'react';
 import { DATA } from '../data/Data';
+import Animation from 'react-native-reanimated';
 
-const Animation = (props) => {
+const AccordionAnimation = (props) => {
     const [expanded, setExpanded] = useState(null);
 
     const toggleExpanded = (index) => {
@@ -88,4 +89,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default Animation;
+export default AccordionAnimation;
